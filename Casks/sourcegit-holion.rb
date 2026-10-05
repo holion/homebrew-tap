@@ -1,9 +1,8 @@
 cask "sourcegit-holion" do
-  arch arm: "arm64", intel: "x64"
+  arch arm: "arm64"
 
-  version "2026.21.2"
-  sha256 arm:   "2f5e879a28ac4c441bd0c8f9142ad88046c80e7bcf83f2098d1f7f476baba41d",
-         intel: "d4f4b030b18d06fe71878c41460ace095948407c236c9c8eece84fae846a4a12"
+  version "2026.21.3"
+  sha256 "12ace9937ce437922f35dcf123146eb154b765ba52123ff25198f0b69401be48"
 
   url "https://github.com/holion/sourcegit/releases/download/v#{version}/sourcegit_#{version}.osx-#{arch}.zip"
   name "SourceGit (Holion)"
@@ -17,6 +16,7 @@ cask "sourcegit-holion" do
 
   auto_updates true
   conflicts_with cask: "sourcegit"
+  depends_on arch: :arm64
   depends_on macos: ">= :ventura"
 
   app "SourceGit.app"
