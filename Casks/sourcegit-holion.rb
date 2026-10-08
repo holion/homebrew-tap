@@ -1,8 +1,8 @@
 cask "sourcegit-holion" do
   arch arm: "arm64"
 
-  version "2026.21.11"
-  sha256 "e8ccc185d5667b877217ee71f78c9152fac307accc6e6acd3ef77aef80fe37be"
+  version "2026.21.12"
+  sha256 "7ceff9bfd781d470f9554557eb20ded9354954b76a927607158e0de7e856869b"
 
   url "https://github.com/holion/sourcegit/releases/download/v#{version}/sourcegit_#{version}.osx-#{arch}.zip"
   name "SourceGit (Holion)"
